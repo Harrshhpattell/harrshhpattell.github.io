@@ -1,0 +1,125 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+html {
+    position: relative;
+    min-height:100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        
+    /*background: linear-gradient(180deg, rgba(17,205,125,1) 0%, rgba(181,240,109,1) 37%, rgba(221,254,103,1) 55%, rgba(245,254,143,1) 82%, rgba(253,254,238,1) 100%); */
+}
+
+body {
+    background: #ededf2;
+    background: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    margin: 34px 13px;
+    font-family: DMSans, sans-serif;
+    font-size: 13pt;
+    font-style: normal;
+    line-height: 150%;
+    font-variant-numeric: oldstyle-nums;
+}
+
+.content {
+    margin: 0px auto;
+    max-width: 720px;
+    margin-bottom: 89px;  /* 34px + img height 55 */
+    background: white;
+    padding: 55px;
+    border-radius: 21px;
+    box-shadow: 0 16px 24px 0 rgba(0,0,0,.1);
+    transition: .5s;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+a:visited {
+    color: black;
+}
+
+.header-wrap {
+    margin: 0px 0px 34px 0px;
+}
+
+h1 {
+    color: #111;
+    font-family: DMMono, sans-serif;
+    font-size: 34pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 130%;
+}
+
+b {
+    font-family: DMSans, sans-serif;
+    font-weight: bold;
+}
+
+
+.keywords-area {
+    line-height: 100%;
+    margin-top: 55px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.kw {
+    font-size: 12pt;
+    display: inline-block;
+    margin: 3px 6px 3px 0px;
+    padding: 5px 13px;
+    background: #ededf2;
+    border-radius: 5px;
+    text-transform: lowercase;
+}
+
+.kw:hover {
+    background: #e3e3ea;
+    cursor: pointer;
+}
+
+
+#kw-section {
+    position: relative;
+    display: inline-block;
+    font-family: DMMono;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+    text-decoration: underline 3px #0046ff;
+}
+
+/* ----- footer ----- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+/* here i try to center my signature
+i don't know why but it works like a charm */
+#signature {
+    width: 55px;
+    margin: 21px;
+    display: block;
+    position: relative;
+    left: -50%;
+}

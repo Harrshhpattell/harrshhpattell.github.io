@@ -1,0 +1,29 @@
+@media only screen and (max-width: 480px) {
+  body {
+    background: white;
+  }
+  
+  .content {
+    padding: 0px;
+    border-radius: 0px;
+}
+  
+  .header-wrap {
+    margin: 55px 0px 34px 0px;
+  }
+  
+  h1 {
+    font-size: 34px;  
+    letter-spacing: 1px;
+  }
+  
+  .content {
+    box-shadow: none;
+  }
+  
+  #textbox {
+    border: 1px solid #ccc;
+  }
+}
+
+

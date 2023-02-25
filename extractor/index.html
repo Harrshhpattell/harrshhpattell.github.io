@@ -1,0 +1,44 @@
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Keyword Extractor</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="mobile.css">
+  </head>
+
+<body>
+	<div class="content" align="center">
+		<div class="header-wrap">
+			<h1><img src="hackathon_logo.jpg" alt="logo" style="height: 50px; width: 50px; position: relative;top: 7px;"> Extractor</h1>
+		</div>
+
+		<form onsubmit="extract();return false;">
+		  <textarea id="textbox" name="confirmationText" rows="8" form="confirmationForm"></textarea>
+		  <br><br>
+		  <input type="file" id="fileInput">
+		  <input type="button" id="submitButton" class="extract-button1" value="Upload File (txt only)">
+		  <script src="upload.js"> </script>
+		  <br>
+		  <input type="submit" id="extract-button" class="extract-button1"  value="extract keywords">
+		  
+		</form>
+		
+		<div class="keywords-area" align="left">
+			<p id="kw-section"></p>
+			<br/>
+			<div id="kw-list">
+			</div>
+		</div>
+	</div>
+
+    
+  <script type="text/javascript" src="extractor.js"></script>
+
+</body>
+</html>
+
